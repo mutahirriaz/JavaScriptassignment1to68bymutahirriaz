@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment 1 to 68</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- CHAPTER 43 TO 48 -->
+    <!-- Q.NO.1 -->
+    <!-- <a href="#" id="aboutme" onclick="aboutMe()">About Me</a> -->
+
+    <!-- Q.NO.2 -->
+    <!-- <img   src="data:image/jpeg;base64,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" onclick="onPurchase()" style="cursor: pointer;" height="200px" alt=""> -->
+    <!-- <img   src="data:image/jpeg;base64,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" onclick="onPurchase()" style="cursor: pointer;" alt=""> -->
+
+    <!-- Q.NO.3 -->
+    <!--   
+    <table>
+     <tr>
+         <th>Index</th>
+         <th>Name</th>
+         <th>Class </th>
+         
+     </tr>
+     <tr>
+         <td id="a">0</td>
+         <td id="b">John</td>
+         <td id="c">10</td>
+         <td><button  onclick="rowEmpty()">Delete</button></td>
+     </tr>
+     <tr>
+        <td id="d">3</td>
+        <td id="e">doe</td>
+        <td id="f">5</td>
+        <td><button  onclick="rowEmpty1()">Delete</button></td>
+
+
+
+    </tr>
+    <tr>
+        <td id="g">5</td>
+        <td id="h">mark</td>
+        <td id="i">3</td>
+        <td><button  onclick="rowEmpty2()">Delete</button></td>
+
+    </tr>
+    <tr>
+        <td id="j">7</td>
+        <td id="k">daniel</td>
+        <td id="l">6</td>
+        <td><button  onclick="rowEmpty3()">Delete</button></td>
+
+    </tr>
+    <tr>
+        <td id="m">4</td>
+        <td id="n">mark</td>
+        <td id="o">7</td>
+        <td><button  onclick="rowEmpty4()">Delete</button></td>
+    </tr>
+
+    </table>
+     -->
+
+    <!-- Q.NO.4 -->
+    <!-- <img src="data:image/jpeg;base64,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" id="image" onmouseout="reverse()" onmouseover="change()" alt=""> -->
+
+    <!-- Q.NO.5 -->
+    <!-- <button type="button" class="btn btn-primary mt-2 ml-3" onClick="clickIncrease()">Increase</button>
+<button type="button" class="btn btn-dark mt-2 ml-3" onClick="clickDecrease()">Decrease</button>
+<button type="button" class="btn btn-danger mt-2 ml-3" onClick = "clickDelete()">Reset </button>
+<p class="ml-3">Clicks: <a id="clicks">0</a></p> -->
+
+
+
+    <!--CHAPTER 49 to 52 -->
+    <!-- Q.NO.1 -->
+    <!-- <form action="">
+        <span>Enter First name :</span> <input type="text" id="firstname" placeholder="First name"><br><br>
+        <span>Enter last name :</span> <input type="text" id="lastname" placeholder="Last name"><br><br>
+        <span>Enter your email</span><input type="text" id="email" placeholder="Email"><br><br>
+        <span>Enter phone Number</span><input type="text" id="phone" placeholder="Phone number">
+        <button onclick="getForm();lastName();getEmail();getPhone()">Submit</button>
+    </form> -->
+
+    <!-- Q.NO.2 -->
+    <!-- <p id="para"> The product is s7 edge . It has been sold around around the world. <a href="javascript:void(0)" onclick="remText()" >Read More</a> </p> -->
+
+    <!-- CHAPTER 52 TO 57 -->
+    <!-- Q.NO.1 -->
+    <!-- <div>
+        <img  onclick="showImage(this)" src="images/1.jpg" alt="" width="200px" height="150px"  data-toggle="modal" data-target="#exampleModal">
+        <img  onclick="showImage(this)" src="images/2.jpg" alt="" width="200px" height="150px"  data-toggle="modal" data-target="#exampleModal">
+        <img  onclick="showImage(this)" src="images/3.jpg" alt="" width="200px" height="150px"  data-toggle="modal" data-target="#exampleModal">
+        <img  onclick="showImage(this)" src="images/4.png" alt="" width="200px" height="150px"  data-toggle="modal" data-target="#exampleModal">
+        <img  onclick="showImage(this)" src="images/5.jpg" alt="" width="200px" height="150px"  data-toggle="modal" data-target="#exampleModal">
+    </div> -->
+
+
+    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    
+        <div class="modal-body">
+          <img src="" alt="" id="modalImage">
+        </div>
+      
+    </div>
+  </div> -->
+
+
+    <!-- // EVENTS -->
+    <!-- <div>
+<h1> DOM </h1>
+<div id="form-content" class="content">
+<label for="first-name">First Name</label>
+<input type="text" id="first-name" />
+<label for="last-name">Last Name</label>
+<input type="text" id="last-name" />
+<label for="email">Email</label>
+<input type="text" id="email" />
+</div>
+<div id="main-content" class="content">
+<p class="render"> First Name : Alex</p>
+<p class="render" id="lastName">Last Name: Bank</p>
+<p class="render"> Email : alexbank@example.com</p>
+<p class="render"> Country : Pakistan </p>
+<p class="render"> contact : +92 300 1234567</p>
+</div>
+</div> -->
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+<script src="app.js"></script>
+
+</html>
